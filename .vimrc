@@ -5,12 +5,12 @@ syntax on
 set linespace=3
 set guifont=Fira\ Code:h12
 set cursorline
+filetype plugin indent on
+set nocompatible
+filetype off
+filetype plugin indent on
+call plug#begin()
 
-set rtp+=~/.vim/bundle/Vundle.vim
+Plug 'davidhalter/jedi-vim'
 
-call vundle#begin()
-
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'rainglow/vim'
-
-call vundle#end()
+call plug#end()
